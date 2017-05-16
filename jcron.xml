@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://help.aunited.ru/dtd/joomla/3.0/plugin-install.dtd">
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>System - JCron Plugin</name>
+	<author>Vitaliy Zhukov</author>
+	<creationDate>May 2017</creationDate>
+	<copyright>Vitaliy Zhukov 2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/lgpl-2.1.html GNU/LGPL</license>
+	<authorEmail>info@aunited.ru</authorEmail>
+	<authorUrl>http://aunited.ru/cloudvideo</authorUrl>
+	<version>0.1</version>
+	<description>
+	<![CDATA[ Description here	]]>
+	</description>
+	<files>
+		<filename plugin="jcron">jcron.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mode" type="radio" class="btn-group btn-group-yesno" default="0" label="Cron mode" description="High confidence mode.">
+                    <option value="0">JNo</option>
+                    <option value="1">On page load</option>
+                    <option value="2">Cron</option>
+                </field>
+                <field name="jaupdate" type="radio" class="btn-group btn-group-yesno" default="1" label="Joomla autoupdate" description="Allow fullscreen">
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                    <option value="2">Force</option>
+                </field>
+			</fieldset>
+			<fieldset name="Cron">
+                <!-- Update plugins over API -->
+                <!-- Free field -->
+            </fieldset>
+		</fields>
+	</config>
+</extension>
